@@ -53,8 +53,8 @@ $(function() {
       });
 
       it('loadFeed function works', function(done) {
-        elemEntry = $('.entry');
-        expect(elemEntry).not.toBeNull();
+        elemEntry = $('.feed .entry');
+        expect(elemEntry.length).toBeGreaterThan(0);
         done();
       });
     });
